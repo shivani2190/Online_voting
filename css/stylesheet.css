@@ -1,0 +1,83 @@
+body{
+    background-color: aqua;
+    background-image: url(https://images.pexels.com/photos/7103110/pexels-photo-7103110.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+*{
+    text-decoration: none;
+}
+#imagecss {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+}
+#headersection {
+    font-size: 27px;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    /* background-color: rgb(113, 82, 82); */
+    position: absolute;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+}
+.h4{
+    left: 90px;
+    width: 200px;
+    bottom: 0px;
+    font-size: 25px;
+    position: absolute;
+    
+}
+.footer{
+    background-color: black;
+    color: white;
+    width: 16%;
+    border-radius: 5px;
+    height: 25px;
+}
+a{
+    color: rgb(231, 240, 75);
+}
+.form-1{
+    background-color: black;
+    color: white;
+}
+.form-2{
+    color: white;
+    background-color: black;
+}
+#headersection h1 {
+    font-family: Cursive;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#dropbox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;   
+}
+
+#loginbtn{
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(2, 69, 92);
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+}
+#loginbtn:hover{
+    background-color: rgb(14, 127, 162);
+}
+

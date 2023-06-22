@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vpting System - Registration</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        #address{
+            width: 30%;
+        }
+
+        #imagepart{
+            border-radius: 5px;
+            width: 30.7%;
+            padding: 6px;
+        }
+        #role{
+            border-radius: 5px;
+            padding: 10px;
+            width: 30.4%;  
+        }
+
+        #role select{
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .form-1{
+            color: white;
+            background-color: black;
+        }
+        .regbtn{
+            padding: 5px;
+            font-size: 15px;
+            background-color: rgb(2, 69, 92);
+            color: white;
+            border-radius: 15px;
+            width: 100px;
+        }
+        .regbtn:hover{
+            background-color: rgb(14, 127, 162);
+        }
+        .file{
+            background-color: rgb(14, 13, 13);
+            color: rgb(240, 227, 227);
+            width: 43%;
+            margin: 0px;
+            padding: 5px;
+            font-size: 15px;   
+        }
+        .file-1{
+            background-color: rgb(14, 13, 13);
+            color: rgb(240, 227, 227);
+            width: 19%;
+            margin: 0px;
+            padding: 5px;
+            font-size: 15px;   
+        }
+        .head{
+            font-size: 60px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            width: 20%;
+            border-radius: 5px;
+            height: 25px;
+        }
+        a{
+            color: rgb(231, 240, 75);
+        }
+
+    </style>
+    <center>
+    <div>
+        <h1 class="head">Online Voting System</h1>
+    </div>
+    
+    <div id="bodysection">
+        <h2>Registration</h2>
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <input class="form-1" type="text" name="name" placeholder ="Enter name">
+            <input class="form-1" type="number" name="mobile" placeholder ="Enter mobile"><br><br>
+            <input class="form-1" type="password" name="password" placeholder ="Password">
+            <input class="form-1" type="password" name="cpassword" placeholder ="Confirm Password"><br><br>
+            <input class="form-1" id="address" type="text" name="address" placeholder ="Address"><br><br>
+           
+            <div class="form-1" id="imagepart">
+                Upload image: <input class="file" type="file" name="photo">
+            </div>
+            <br>
+            <div class="form-1" id="role">
+                Select your role: <select class="file-1" name="role">
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select>
+            </div>
+        
+            <br>
+            <button class="regbtn">
+            
+            Register</button><br><br>
+            <div class="footer">
+                Already user? <a href="../index.html">Login here</a>
+            </div>
+           
+        </form>
+    </div>
+</center>
+</body>
+</html>

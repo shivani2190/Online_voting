@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo"><img src="images/vote.avif" width="70" height="60" class="d-inline-block align-top" alt=""></div>
+    <div class="h4">
+      <h4>Right To Vote</h4>
+    </div>
+  </div>
+  <center>
+  <div id="headersection">
+    <h1>Online Voting System</h1>
+  </div>
+
+  <div id="bodysection">
+    <!-- <img src="images/vote bg.jpg" alt="vote" width="200" height="250"> -->
+    <form  action="api/login.php" method="post">
+      <h2>Login</h2>
+      <input class="form-1" type = "number" name="mobile" placeholder="Enter mobile"><br><br>
+      <input class="form-1" type="password" name="password"  placeholder="Enter password"><br><br>
+      <select class="form-2" id="dropbox" name="role">
+        <option value="1">Voter</option>
+        <option value="2">Group</option>
+      </select><br><br>
+      <button  id="loginbtn"  type="submit">
+        Login
+      </button><br><br>
+      <div class="footer">
+        New User? <a href="routes/register.html">Register here</a>
+      </div>
+    </form>
+  </div>
+</center> 
+</body>
+</html>
